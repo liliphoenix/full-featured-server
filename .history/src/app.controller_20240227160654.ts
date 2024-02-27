@@ -1,5 +1,5 @@
 import { Controller, Get, Res } from '@nestjs/common';
-import { Response } from 'express';
+import { Response, json } from 'express';
 import { AppService } from './app.service';
 import { STS } from 'ali-oss';
 

@@ -1,5 +1,5 @@
 import { Controller, Get, Res } from '@nestjs/common';
-import { Response } from 'express';
+import { Response, json } from 'express';
 import { AppService } from './app.service';
 import { STS } from 'ali-oss';
 
@@ -15,6 +15,7 @@ export class AppController {
       accessKeyId: 'LTAI5tCnEve3dEbTiVWWQtph',
       accessKeySecret: '39dg5pVlLXbH6wAZjQmbYYvjMEz15i',
     });
+
     const result = await sts.assumeRole(
       ':ram::1057778667542355:role/full-featured-test',
       ``,
