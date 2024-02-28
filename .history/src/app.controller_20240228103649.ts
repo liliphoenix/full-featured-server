@@ -13,8 +13,8 @@ export class AppController {
     console.log(123);
 
     const sts = new STS({
-      accessKeyId: 'LTAI5tCnEve3dEbTiVWWQtph',
-      accessKeySecret: '39dg5pVlLXbH6wAZjQmbYYvjMEz15i',
+      accessKeyId: 'LTAI5tQhkXNs3KuTXqwEvTv2',
+      accessKeySecret: 'KOo5IAL8XucPFBQBfWa4JwJ9opmnG3',
     });
     const result = await sts.assumeRole(
       ':ram::1057778667542355:role/full-featured-test',
